@@ -9,6 +9,7 @@ Based on the downloadXkcd.py file in [[https://automatetheboringstuff.com/chapte
 * Download all the images before a number
 : python downloadXKCD.py -a NUM
 The NUM is a number like 1872 in url https://xkcd.com/1872
+
 It will download all the images in links from https://xkcd.com/1 to https://xkcd.com/1872
 * Download one or multiple specific images
 : python downloadXKCD.py -s NUM
@@ -19,6 +20,6 @@ By default, the images will be stored in ./xkcd, but if runing the Python file w
 * Dependencies
 1. Python v3+
 2. *BeautifulSoup4*
-: pip install beautifulsoup4
+   : pip install beautifulsoup4
 * TODOs
 1. Check if the image is already downloaded and completed, currently it will redownload all the images.
