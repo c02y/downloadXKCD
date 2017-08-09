@@ -1,0 +1,24 @@
+Download comic images from https://xkcd.com into local disk.
+
+Based on the downloadXkcd.py file in [[https://automatetheboringstuff.com/chapter11/][Chapter 11]] of book [[https://automatetheboringstuff.com/][Automate the Boring Stuff with Python]]
+
+* Download the latest image
+: python downloadXKCD.py
+* Download all the images
+: python downloadXKCD.py -a
+* Download all the images before a number
+: python downloadXKCD.py -a NUM
+The NUM is a number like 1872 in url https://xkcd.com/1872
+It will download all the images in links from https://xkcd.com/1 to https://xkcd.com/1872
+* Download one or multiple specific images
+: python downloadXKCD.py -s NUM
+: python downloadXKCD.py -s NUM1 NUM2 ...
+The NUM is a number like 1872 in url https://xkcd.com/1872
+* Provide the directory to store the download images
+By default, the images will be stored in ./xkcd, but if runing the Python file with option `-d dir`, all the images will be stored in dir.
+* Dependencies
+1. Python v3+
+2. *BeautifulSoup4*
+: pip install beautifulsoup4
+* TODO
+1. Check if the image is already downloaded and completed, currently it will redownload all the images.
