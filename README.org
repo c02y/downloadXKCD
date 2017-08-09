@@ -20,5 +20,5 @@ By default, the images will be stored in ./xkcd, but if runing the Python file w
 1. Python v3+
 2. *BeautifulSoup4*
 : pip install beautifulsoup4
-* TODO
+* TODOs
 1. Check if the image is already downloaded and completed, currently it will redownload all the images.
